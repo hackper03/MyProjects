@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+.shopping-header{
+	height: 6vh;
+	width: 200vh;
+	background-color: #FF4B2B;
+	margin: 5vh 10vh;
+}

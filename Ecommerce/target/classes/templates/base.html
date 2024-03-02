@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Home Page</title>
+	<link th:href="@{/css/style.css}" rel="stylesheet" />
+	<link th:href="@{/css/footer.css}" rel="stylesheet" />
+	<link th:href="@{/css/navbar.css}" rel="stylesheet" />
+	<link th:href="@{/css/product.css}" rel="stylesheet" />
+</head>
+
+<body>
+	<div th:fragment="base">
+		<nav class="navbar" th:insert="~{navbar :: navbar-content }" />
+		<span th:fragment="not-found-content"></span>
+		<footer th:insert="~{footer :: footer-content}"></footer>
+	</div>
+</body>
+
+</html>
