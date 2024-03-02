@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Not Found</title>
+	<link th:href="@{/css/style.css}" rel="stylesheet" />
+	<link th:href="@{/css/footer.css}" rel="stylesheet" />
+	<link th:href="@{/css/navbar.css}" rel="stylesheet" />
+</head>
+
+<body>
+<nav class="navbar" th:insert="~{navbar :: navbar-content }" />
+	<span th:fragment="not-found-content">
+		<img src="img/404.png" class="four-0-four-image" alt="">
+		<p class="four-0-four-msg">look like you are lost. Head to beack to our <a th:href="@{/home}">homepage</a></p>
+	</span>
+	<footer th:insert="~{footer :: footer-content}"></footer>
+</body>
+
+</html>
